@@ -11,7 +11,10 @@ Aplicacion de consola desarrollada con TypeScript para administrar tareas.
 - Eliminar una tarea
 
 ## Temas utilizados
-
+- POO, encapsulamiento
+- Promises, async, await
+- interfaces, enum, tipos
+- Depency Injection
 
 
 ## Requisitos

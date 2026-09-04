@@ -16,6 +16,8 @@ Aplicacion de consola desarrollada con TypeScript para administrar tareas.
 - interfaces, enum, tipos
 - Depency Injection
 
+- Clean code, un poco de SOLID, DRY
+
 
 ## Requisitos
 

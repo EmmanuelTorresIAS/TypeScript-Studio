@@ -1,5 +1,5 @@
-import { ITask } from '../models/interfaces/ITask';
-import { TaskStatus } from '../models/interfaces/TaskStatus';
+import { ITask } from '../interfaces/ITask';
+import { TaskStatus } from '../interfaces/TaskStatus';
 
 export interface Database {
     tasks: ITask[];
@@ -11,7 +11,7 @@ export const database: Database = {
             id: 1,
             title: 'Aprender TypeScript',
             description: 'Estudiar interfaces y clases',
-            status: TaskStatus.IN_PROGRESS
+            status: TaskStatus.In_PROGRESS
         },
         {
             id: 2,

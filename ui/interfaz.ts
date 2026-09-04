@@ -45,4 +45,7 @@ export const interfaz = async (): Promise<void> => {
 				console.log('Opcion no valida.');
 		}
 	} while (option !== '0');
+
+
+    console.log('Saliendo de la aplicacion...');
 };

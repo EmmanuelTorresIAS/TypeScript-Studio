@@ -21,6 +21,28 @@ export class ServiceTask {
         return this.db.tasks.find(task => task.id === id);
     }
 
+    public update(id: number, taskData: Omit<ITask, 'id'>): ITask | undefined {
+        const taskIndex = this.db.tasks.findIndex(task => task.id === id);
+
+        if (taskIndex === -1) {
+            return undefined;
+        }
+
+        this.db.tasks[taskIndex] = { id, ...taskData };
+        return this.db.tasks[taskIndex];
+    }
+
+    public delete(id: number): boolean {
+        const taskIndex = this.db.tasks.findIndex(task => task.id === id);
+
+        if (taskIndex === -1) {
+            return false;
+        }
+
+        this.db.tasks.splice(taskIndex, 1);
+        return true;
+    }
+
     private getNextId(): number {
         return this.db.tasks.length === 0
             ? 1

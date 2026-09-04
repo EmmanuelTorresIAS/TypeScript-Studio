@@ -1,0 +1,26 @@
+{
+  "name": "taskmanagementsystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ui/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelTorresIAS/TypeScript-Studio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmanuelTorresIAS/TypeScript-Studio/issues"
+  },
+  "homepage": "https://github.com/EmmanuelTorresIAS/TypeScript-Studio#readme",
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
